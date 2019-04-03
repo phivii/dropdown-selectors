@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <!-- inset boostrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- respinsive meta tag for mobile device support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta charset="utf-8">
+
+    <title>Unit Information</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script src="js/data.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body class="bg-primary"">
+    <div class="container" style="background-color: #00000040">
+        <h1 class="mb-3"> Sample Form </h1>
+        
+        <form>
+
+            <fieldset class="form-group">
+                <legend>Unit Location</legend>
+
+                <div id="branchSection">
+                    <label for="branch">Branch : </label>
+                    <select onchange="changeBranch(this);" class="form-control" id="branch">
+                        <!-- this could easily be added dynamicly -->
+                    </select>
+
+                    <!-- test div -->
+                    <div id="branch_options"></div>
+                </div>
+
+                <div id="buildingSection">
+                    <label for="building">Building : </label>
+                    <select onchange="changeBuilding(this);" class="form-control" id="buildings">
+                        <!-- insert options here -->
+                    </select>
+                </div>
+
+                <div id="floorSection">
+                    <label for="floor">Floor : </label>
+                    <select onchange="changeFloor(this);" class="form-control" id="floors">
+                        <!-- insert options here -->
+                    </select>
+                </div>
+
+                <div id="roomSection">
+                    <label for="room">Room # : </label>
+                    <select onchange="changeRoom(this);" class="form-control" id="rooms">
+                        <!-- insert options here -->
+                    </select>
+                </div>
+
+            </fieldset>
+
+            <fieldset class="form-group" id="data">
+                <legend>Data</legend>
+                
+                <div id="notesSection">
+                    <label for="notes">Notes : </label><br>
+                    <textarea placeholder="Please enter information to be submited with the above reference data." rows = "5" cols = "60" name = "notes" id="notes"></textarea>
+                </div>
+				
+                <div id="initialsSection">
+                    <label for="notes">Intials : </label><br>
+					<input type="text" id="initials" placeholder="Initial Here">
+                </div>
+
+                <div id="buttonsSection" class="mt-2">
+                    <button class="btn-success" type="reset" id="reset" onClick="start();">Reset!</button>
+                    <button class="btn-danger" type="button" id="submit" onClick="submitNotes();">Submit!</button>
+                </div>
+
+
+            </fieldset>
+
+        </form>
+        <p class="mt-5">&copy; 2019 Proper Code</p>
+    </div> <!-- container end -->
+
+
+    <!-- end of body tag includes -->
+    <script language="javascript">
+	
+	start();
+	
+	</script>
+    
+</body>
+</html>

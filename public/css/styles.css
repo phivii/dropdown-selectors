@@ -1,0 +1,52 @@
+#buildingSection,#floorSection,#roomSection,#notesSection,#initialsSection,#buttonsSection
+{
+	display:none;
+	margin:10px 0px;
+}
+#branchSection
+{
+	margin:10px 0px;
+}
+#buttonsSection
+{
+	padding:20px 0px 0px 0px;
+}
+#data
+{
+	display:none;
+}
+
+textarea
+{
+	width:100%;
+	border-radius:5px;
+	padding:10px 15px;
+}
+#initials
+{
+	width:132px;
+	text-align:center;	
+	border-radius:5px;
+	padding:10px 15px;
+}
+.container
+{
+    padding: 5px 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.21);
+    color: white;
+    margin-bottom:50px;
+}
+button
+{
+	padding:5px 15px;
+	margin-right: 10px;
+	border-radius:5px;
+	
+}
+fieldset
+{
+	padding-bottom:20px;
+	border-bottom:2px solid white;
+}
